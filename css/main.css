@@ -2,17 +2,22 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     background-color: #f0f0f0;
-    display: flex;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    /* height: 100vh; */
+}
+.container{
+        display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
 }
-
 .board td {
     width: 50px;
     height: 50px;
     border: 1px solid #ff0000; 
     text-align: center;
+
     vertical-align: middle;
     cursor: pointer;
 }
@@ -28,12 +33,48 @@ body {
 .footer {
     background-color: lightcoral;
     color: #ecf0f1;
-    padding: 20px;
     text-align: center;
+    position : absolute; bottom: 0;
+    width: 100%;
+    
 }
 .cell-flagged {
     background-image: url('img/flag.png'); /* Replace with the actual path to your flag icon */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+}
+.popup {
+    display: none; /* Hide popup initially */
+    position: fixed;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border: 1px solid black;
+    padding: 20px;
+    z-index: 1000;
+}
+.button {
+    align-self: auto;
+    border: 1px solid;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 6px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    background-color: white;
+    color: #ff6b6b;
+    border: 2px solid#ff6b6b;
+    border-radius: 50px;
+}
+
+.button:hover {
+    background-color: rgb(114, 114, 114);
+    font-size: 20px;
+    color: white;
 }
