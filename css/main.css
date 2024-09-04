@@ -1,0 +1,39 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.board td {
+    width: 50px;
+    height: 50px;
+    border: 1px solid #ff0000; 
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.mine {
+    background-color: #ff6b6b; 
+}
+
+.empty {
+    background-color: #e0e0e0; 
+}
+
+.footer {
+    background-color: lightcoral;
+    color: #ecf0f1;
+    padding: 20px;
+    text-align: center;
+}
+.cell-flagged {
+    background-image: url('img/flag.png'); /* Replace with the actual path to your flag icon */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
