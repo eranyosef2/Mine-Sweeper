@@ -25,7 +25,7 @@ function onChangeDifficulty(level){
         gLevel = { level : 12 ,SIZE: 12, MINES: 32 }
     }
     console.log(level);
-onInitGame()
+    onInitGame()
 
 } 
 
@@ -41,6 +41,12 @@ var gGame = {
 
 // Initialize the game
 function onInitGame() {
+    gGame = {
+        isOn: false,
+        shownCount: 0,
+        markedCount: 0,
+        secsPassed: 0
+    }
     gBoard = buildBoard()
     document.querySelector(".popup").style.display = "none";
     renderBoard(gBoard)
