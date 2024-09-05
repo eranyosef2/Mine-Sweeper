@@ -98,18 +98,18 @@
 
 // //findemptyCells
 
-function findEmptyCells() {
-    var emptyCells = []
-    for (var i = 0; i < gBoard.length; i++) {
-        for (var j = 0; j < gBoard[i].length; j++) {
-            if (gBoard[i][j] === EMPTY) {
+// function findEmptyCells() {
+//     var emptyCells = []
+//     for (var i = 0; i < gBoard.length; i++) {
+//         for (var j = 0; j < gBoard[i].length; j++) {
+//             if (gBoard[i][j] === EMPTY) {
 
-                emptyCells.push({ i: i, j: j })
-            }
-        }
-    }
-    return emptyCells
-}
+//                 emptyCells.push({ i: i, j: j })
+//             }
+//         }
+//     }
+//     return emptyCells
+// }
 
 // //Add the MINES randomly on the Board
 // console.log();

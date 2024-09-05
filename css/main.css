@@ -31,11 +31,12 @@ body {
 }
 
 .footer {
-    background-color: lightcoral;
+    background-color: rgba(35, 105, 122, 0.562);
     color: #ecf0f1;
     text-align: center;
     position : absolute; bottom: 0;
     width: 100%;
+    
     
 }
 .cell-flagged {
@@ -44,7 +45,7 @@ body {
     background-position: center;
     background-repeat: no-repeat;
 }
-.popup {
+.win {
     display: none; /* Hide popup initially */
     position: fixed;
     top: 20%;
