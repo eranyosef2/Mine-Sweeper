@@ -2,22 +2,19 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     background-color: #f0f0f0;
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
-    /* height: 100vh; */
+
 }
 .container{
         display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    margin : 0 ;
 }
 .board td {
     width: 50px;
     height: 50px;
     border: 1px solid #ff0000; 
-    text-align: center;
-
     vertical-align: middle;
     cursor: pointer;
 }
@@ -40,13 +37,13 @@ body {
     
 }
 .cell-flagged {
-    background-image: url('img/flag.png'); /* Replace with the actual path to your flag icon */
+    background-image: url('img/flag.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 .win {
-    display: none; /* Hide popup initially */
+    display: none; 
     position: fixed;
     top: 20%;
     left: 50%;
@@ -59,7 +56,7 @@ body {
 .button {
     align-self: auto;
     border: 1px solid;
-    color: white;
+    color: rgb(14, 12, 12);
     padding: 16px 32px;
     text-align: center;
     text-decoration: none;
@@ -68,7 +65,7 @@ body {
     margin: 6px;
     transition-duration: 0.4s;
     cursor: pointer;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     color: #ff6b6b;
     border: 2px solid#ff6b6b;
     border-radius: 50px;
@@ -78,4 +75,64 @@ body {
     background-color: rgb(114, 114, 114);
     font-size: 20px;
     color: white;
+}
+h1 {
+    color: #ff0000;
+    font-size: 2.5rem;
+    text-shadow: 2px 2px 4px #800000; 
+    text-align: center;
+    margin-bottom: 20px;
+
+}
+
+
+.lives {
+    color: black;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-align: center;
+    text-shadow: 1px 1px 3px #b30000;
+}
+
+
+.win {
+    color: #ff6666; 
+    font-size: 2rem;
+    font-weight: bold;
+    display: none;
+    text-align: center;
+    background-color: #ffe6e6;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.lose {
+    color: #cc0000; 
+    font-size: 2rem;
+    font-weight: bold;
+    display: none; 
+    text-align: center;
+    background-color: #ffcccc; 
+    padding: 10px;
+    border-radius: 8px;
+}
+
+h4 {
+    color: rgb(83, 29, 29);
+    font-size: 1.2rem;
+    text-align: center;
+    margin-top: 20px;
+    text-shadow: 1px 1px 3px #b30000;
+}
+.smiley-button {
+    font-size: 2rem;
+    padding: 10px 20px;
+    border: none;
+    background-color: #f0f0f0;
+    cursor: pointer;
+}
+
+.smiley-button:hover {
+    background-color: #ddd;
 }

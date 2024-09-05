@@ -3,23 +3,45 @@
 
 
 <head>  
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const darkModeToggle = document.querySelector('.dark-mode-toggle');
+            const darkModeLink = document.querySelector('.dark-mode-link');
+        
+            darkModeToggle.addEventListener('click', () => {
+                if (darkModeLink.disabled) {
+                    darkModeLink.disabled = false;
+                    darkModeToggle.textContent = 'Light Mode'; // Optional: Change button text
+                } else {
+                    darkModeLink.disabled = true;
+                    darkModeToggle.textContent = 'Dark Mode'; // Optional: Change button text
+                }
+            });
+        });
+        </script>
     <link rel="stylesheet" href="css/main.css">
+    <link class="dark-mode-link" rel="stylesheet" href="css/dark-mode.css" disabled/>
 </head>
 <body onload = "onInitGame()">
     <div class = "container">
     <div class = "mines">
-        <div class = 'lives'>Lives : 3</div>
         <h1> Mine-Sweeper </h1> 
+        <div class = 'lives'>Lives : 3</div>
+
+        <div class = "container">
+            <button class="smiley-button" onclick="onSmileyClick()">😀</button>
 <table>
     <tbody class ="board"> </tbody>
 </table>
-<div class = "win">You Won!</div>
-<div class = "lose">You Lost!</div>
-<div>
+</div>
+<div class = "win">You Won!😎</div>
+<div class = "lose">You Lost!🤯 Better luck next time!</div>
     <h4>Difficulty</h4>
-    <button class="button" onclick="onChangeDifficulty(4)">4</button>
-    <button class="button" onclick="onChangeDifficulty(8)">8</button>
-    <button class="button" onclick="onChangeDifficulty(12)">12</button>
+    <button class="button" onclick="onChangeDifficulty(4)">Beginner</button>
+    <button class="button" onclick="onChangeDifficulty(8)">Intermediate</button>
+    <button class="button" onclick="onChangeDifficulty(12)">Expert</button>
+    <button class="dark-mode-toggle">Dark Mode</button>
+   
     
 </div></div>
 <footer class = "footer">

@@ -1,0 +1,58 @@
+body {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+.container {
+    background-color: #1e1e1e;
+}
+
+.board td {
+    border: 1px solid #333;
+}
+
+.mine {
+    background-color: #ff6b6b;
+}
+
+.empty {
+    background-color: #333;
+}
+
+.footer {
+    background-color: rgba(35, 105, 122, 0.562);
+    color: #e0e0e0;
+}
+
+.cell-flagged {
+    background-image: url('img/flag-dark.png'); /* Update to a dark mode flag icon if necessary */
+}
+
+.win, .lose {
+    background-color: #333;
+    color: #e0e0e0;
+}
+
+.button {
+    border: 2px solid #ff6b6b;
+    color: #ff6b6b;
+    background-color: #333;
+}
+
+.button:hover {
+    background-color: #555;
+    color: #fff;
+}
+
+h1, .lives, h4 {
+    color: #ff6b6b;
+}
+
+.smiley-button {
+    background-color: #1e1e1e;
+    color: #e0e0e0;
+}
+
+.smiley-button:hover {
+    background-color: #333;
+}
