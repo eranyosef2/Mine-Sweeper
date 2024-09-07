@@ -64,6 +64,9 @@ function buildBoard() {
 
 
 function addMines(board, cellToAvoid) {
+console.log("🚀 ~ addMines ~ cellToAvoid:", cellToAvoid)
+
+    
     var minesPlaced = 0
     while (minesPlaced < gLevel.MINES) {
         var i = getRandomIntInclusive(0, gLevel.SIZE - 1)
@@ -140,9 +143,10 @@ function cellRightClicked(event, i, j) {
 
 
 function cellClicked(i, j) {
+    console.log("🚀 ~ cellClicked ~ i, j:", i, j)
     var cell = gBoard[i][j]
     if(!gIsFirstClick) {
-        console.log(gIsFirstClick);
+        // console.log(gIsFirstClick);
         gIsFirstClick = !gIsFirstClick
         addMines(gBoard, cell)
         setMinesNegsCount(gBoard)
@@ -228,7 +232,10 @@ function decreaseLives(){
 }
 function onSmileyClick() {
     console.log('Smiley clicked! Resetting game.');
-    onInitGame()
+    gIsFirstClick = false
+    onInitGame()    
+    // addMines(gBoard)
+
 }
 
 
